@@ -1,0 +1,55 @@
+<head>   
+    <title>Registration</title> 
+    </head>
+    <body>
+        <style>
+           
+            </style>
+            <div>
+                
+                <h1 style="text-align: center;">Pirai Infotech</h1>
+                 <h2>Register Here</h2>
+                 <pre><hr>
+<label><b>*Firstname:</b></label>    <input type="text" name="FirstName" placeholder="Name"required><br>
+<label><b>*Lastname:</b></label>     <input type="text"name="LastName" placeholder="Last Name" required><br>
+<label for="email"><b>*Email:</b></label>        <input type="text"placeholder="Enter Email" name="email" id="email" required><br>
+<label for="psw"><b>Password:</b></label>      <input type="password"placeholder="Enter Password"name="psw" id="psw" required><br>
+<label for="psw-repeat"><b>RepeatPassword:</b></label><input type="password"placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
+                         <hr><form name="f1" onsubmit="store()"action= "D:login.html"method="get" value="Store To Session Storage">
+                  <input type="submit" name="" value="submit">  
+                  <label style="color:rgb(17, 1, 1)"> * Must be filled out</label>
+                  </pre>
+                 </form>
+                    </div>
+                <style>
+                 div{
+                     margin : 50px 350px 200px 530px;
+                     background:rgb(238, 92, 92);
+                     color:black;
+                     font-size: 18px;
+                     border-radius: 20px;
+                     font-family: 'Times New Roman', Times, serif;
+                     width: 400px;
+                     height: 550px;
+                     padding-top: 50px;
+                     padding-left:50px ;
+                     }
+                </style>
+                <script>
+                    function store()
+                    {
+                         var a=Firstname(documet.f1.FirstName.value);
+                        var  b=LastName(document.f1.LastName.value);
+                        var c=Email(document.f1.email.value);
+                        var d=password(document.f1.psw.value);
+                        var e=RepeatPassword(document.f1.psw-repeat.value);
+                        sessionStorage.setItem("a", a);
+                        sessionStorage.setItem("b", b);
+                        sessionStorage.setItem("c", c);
+                        sessionStorage.setItem("d", d);
+                        sessionStorage.setItem("e", e);
+                        location.href = "D:\login.html";
+                    }
+                     
+                </script>
+                  </body>
