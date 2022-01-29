@@ -1,0 +1,48 @@
+<html>
+><head>   
+    <title>Information</title> 
+    </head>
+    <body>
+        <style>
+           
+            div{
+                     margin : 50px 350px 200px 530px;
+                     background:rgb(238, 92, 92);
+                     color:black;
+                     font-size: 18px;
+                     border-radius: 20px;
+                     font-family: 'Times New Roman', Times, serif;
+                     width: 400px;
+                     height: 550px;
+                     padding-top: 50px;
+                    }
+            </style>
+            <script>
+                function get()
+                {
+                   
+                    var a = sessionStorage.getItem("a");
+                    var b = sessionStorage.getItem("b");
+                    var c = sessionStorage.getItem("c");
+                    var d = sessionStorage.getItem("d");
+                    console.log(a); 
+                    console.log(b);
+                    console.log(c);
+                    console.log(d);
+                 }
+                 documet.write("FirstName:"+a+"<br>")
+                 documet.write("LasName:"+a+"<br>")
+                 documet.write("Email:"+a+"<br>")
+                 documet.write("password:"+a+"<br>")
+                 
+            </script>
+
+             <body>
+                <div>
+                    <h1 style="text-align: center;">Pirai Infotech</h1>
+                    <form  value="Get From Session Storage"onsubmit="get()">
+
+                    </form>
+                    </div>
+            </body> 
+            </html>
