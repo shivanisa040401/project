@@ -1,0 +1,69 @@
+<head>   
+    <title> Login Page </title> 
+    </head>
+    <body>
+        
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: rgb(4, 17, 26);
+                font-family: 'Times New Roman', Times, serif;
+            }
+            div{
+                     margin : 50px 350px 200px 530px;
+                     background:rgb(238, 92, 92);
+                     color:black;
+                     font-size: 18px;
+                     border-radius: 20px;
+                     font-family: 'Times New Roman', Times, serif;
+                     width: 400px;
+                     height: 550px;
+                     padding-top: 50px;
+                     padding-left:50px ;
+                     }
+                     a {
+                      text-decoration: none;
+                      font-size: 12px;
+                     line-height: 20px;
+                     color:black;
+                    }
+                </style>
+                <script>
+                    function get()
+                    {
+                       
+                        var a = sessionStorage.getItem("a");
+                        var b = sessionStorage.getItem("b");
+                        var c = sessionStorage.getItem("c");
+                        var d = sessionStorage.getItem("d");
+                        var e = sessionStorage.getItem("e");
+                        console.log(a); 
+                        console.log(b);
+                        console.log(c);
+                        console.log(d);
+                        console.log(e);
+                        var f=Email(documet.f1.em.value);
+                        var  g=LastName(document.f1.pw.value);
+
+                     }
+                </script>
+
+    <body>
+        <div>
+            <h1 style="text-align: center;">Pirai Infotech</h1>
+            <h2>Login Here</h2><hr>
+            <form  value="Get From Session Storage"action="D:\final.html"onsubmit="get()">
+                <p>Email</p>
+                <input type="text" name= "f1"placeholder="Enter Username" required>
+                <p>Password</p>
+                <input type="Password" name="em" placeholder="Enter Password" required><br><hr><br>
+                <input type="submit" name="pw" value="Login"><br><br>
+                <a href="D:\edit.html">Forget your Password? </a><br><br>
+                <a href="D:\edit.html">Don't have account?</a>
+
+            </form>
+        </div>
+    </body> 
+       
+    </html>
